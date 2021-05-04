@@ -1,0 +1,22 @@
+function solucao(numero) {
+	//seu codigo aqui
+    let i;
+    for(i = -1; i < numero; numero--){
+        console.log(numero);
+    }console.log('KABUM')
+}
+
+function processData(input) {
+	solucao(parseInt(input, 10));
+} 
+
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+_input = "";
+process.stdin.on("data", function (input) {
+    _input += input;
+});
+
+process.stdin.on("end", function () {
+   processData(_input);
+});
